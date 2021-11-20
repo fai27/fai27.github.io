@@ -1,6 +1,6 @@
 $(document).ready(function(){
     $(window).scroll(function(){
-        // sticky navbar on scroll script
+        // sticky navbar SCROLLL script
         if(this.scrollY > 20){
             $('.navbar').addClass("sticky");
         }else{
@@ -15,7 +15,7 @@ $(document).ready(function(){
         }
     });
 
-    // slide-up script
+    // slide script
     $('.scroll-up-btn').click(function(){
         $('html').animate({scrollTop: 0});
         // removing smooth scroll on slide-up button click
@@ -27,13 +27,13 @@ $(document).ready(function(){
         $('html').css("scrollBehavior", "smooth");
     });
 
-    // toggle menu/navbar script
+    // TOGLE menu/navbar script
     $('.menu-btn').click(function(){
         $('.navbar .menu').toggleClass("active");
         $('.menu-btn i').toggleClass("active");
     });
 
-    // typing text animation script
+    // TYPING ANIMATION script
     var typed = new Typed(".typing", {
         strings: ["Businessman", "Computer Engineering", "Network Engineering"],
         typeSpeed: 100,
